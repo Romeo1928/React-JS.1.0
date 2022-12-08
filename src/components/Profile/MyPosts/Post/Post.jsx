@@ -6,7 +6,7 @@ const Post = (props) => {
 			<img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg"/>
 			{props.message} {props.name}
 			<div>
-				<span>{props.text} {props.count}</span>
+				<span>like</span> {props.likesCount}
 			</div>
 		</div>
 	);
