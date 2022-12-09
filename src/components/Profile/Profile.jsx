@@ -3,7 +3,7 @@ import MyPosts from "./MyPosts/MyPosts";
 
 const Profile = () => {
 	return (
-			<div className = {s.content}>
+			<div>
 				<div>
 					<img src = 'https://traveller-eu.ru/sites/default/files/styles/index/public/tbilisi-sunset-old-town-1500x600.jpg?itok=qii469CT'/>
 				</div>
