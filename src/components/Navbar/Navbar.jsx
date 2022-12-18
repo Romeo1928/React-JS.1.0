@@ -18,13 +18,13 @@ const Navbar = () => {
 				{/*<NavLink to="/dialogs" className={active => active.isActive ? s.active : s.item}>Messages</NavLink>*/}
 			</div>
 			<div className={s.item}>
-				{/*<NavLink to="/news" className={setActive}>News</NavLink>*/}
+				<NavLink to="/news" className={setActive}>News</NavLink>
 			</div>
 			<div className={s.item}>
-				{/*<NavLink to="/music" className={setActive}>Music</NavLink>*/}
+				<NavLink to="/music" className={setActive}>Music</NavLink>
 			</div>
 			<div className={s.item}>
-				{/*<NavLink to="/settings" className={setActive}>Settings</NavLink>*/}
+				<NavLink to="/settings" className={setActive}>Settings</NavLink>
 			</div>
 		</nav>
 	);

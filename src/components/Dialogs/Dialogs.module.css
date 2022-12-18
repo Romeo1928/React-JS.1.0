@@ -8,7 +8,8 @@
 }
 
 .dialog {
-
+	text-decoration: none;
+	color: white;
 }
 
 .dialogItems .active {
