@@ -1,23 +1,29 @@
 import s from './Navbar.module.css';
 // console.log(s);
+import {NavLink} from "react-router-dom";
+
+const setActive = () => setActive.isActive ? s.active : s.item;
+// const setActive = ({isActive}) => isActive ? s.active : s.item;
+// <NavLink to="/profile" className={active => active.isActive ? s.active : s.item}>Profile</NavLink>
 
 const Navbar = () => {
 	return (
 		<nav className={s.nav}>
-			<div>
-				<a className={s.item} href="/profile">Profile</a>
+			<div className={s.item}>
+				<NavLink to="/profile" className={setActive}>Profile</NavLink>
+				{/*<NavLink to="/profile" className={setActive => setActive.isActive ? s.active : s.item}>Profile</NavLink>*/}
 			</div>
-			<div>
-				<a className={s.item} href="/dialogs">Messages</a>
+			<div className={s.item}>
+				<NavLink to="/dialogs" className={setActive}>Messages</NavLink>
 			</div>
-			<div>
-				<a className={s.item} href="/news">News</a>
+			<div className={s.item}>
+				<NavLink to="/news" className={setActive}>News</NavLink>
 			</div>
-			<div>
-				<a className={s.item} href="/music">Music</a>
+			<div className={s.item}>
+				<NavLink to="/music" className={setActive}>Music</NavLink>
 			</div>
-			<div>
-				<a className={s.item} href="/settings">Settings</a>
+			<div className={s.item}>
+				<NavLink to="/settings" className={setActive}>Settings</NavLink>
 			</div>
 		</nav>
 	);
