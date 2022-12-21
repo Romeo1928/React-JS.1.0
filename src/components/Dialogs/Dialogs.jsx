@@ -6,13 +6,13 @@ import React from "react";
 
 const Dialogs = (props) => {
 
-	let dialogsElements = props.dialogs.map((d) => {
+	let dialogsElements = props.state.dialogs.map((d) => {
 		return <DialogItem name={d.name} id={d.id}/>
 	})
 // let dialogsElements = props.dialogs.map ( d => <DialogItem name={d.name} id={d.id}/> )
 
 
-	let messagesElements = props.messages.map((m) => {
+	let messagesElements = props.state.messages.map((m) => {
 		return <Message message={m.message} id={m.id}/>
 	})
 // let messagesElements = props.messages.map( m => <Message message={m.message} id={m.id}/> )
