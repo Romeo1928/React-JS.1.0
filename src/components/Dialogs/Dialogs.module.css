@@ -5,7 +5,6 @@
 
 .dialogItems {
 	padding: 10px;
-	margin-bottom: 20px;
 }
 
 .dialog {
@@ -26,5 +25,5 @@
 }
 
 .text {
-	padding: 10px;
+	margin-top: 20px;
 }
