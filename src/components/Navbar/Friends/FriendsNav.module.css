@@ -1,0 +1,18 @@
+.title {
+	font-size: 22px;
+}
+.userAva {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.userName {
+	color: white;
+}
+
+ .friends {
+	 display: flex;
+	 justify-content: space-between;
+	 flex-wrap: wrap;
+ }
